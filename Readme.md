@@ -2,7 +2,7 @@
 
 * Студент: [Антон Михайлов](https://up.htmlacademy.ru/htmlcss/39/user/2483533).
 * Наставник: [Олег Зайцев](https://htmlacademy.ru/profile/ozi).
-* Сайт: [Мой проэкт Седона](https://trapaton17lv.github.io/2483533-sedona-39/)
+* Сайт: [Мой проект Седона](https://trapaton17lv.github.io/2483533-sedona-39/)
 
 ---
 
