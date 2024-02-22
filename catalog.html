@@ -2,33 +2,35 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
-      <a class="navivigation-logo" href="index.html">
+    <div class="page-wraper">
+      <header class="page-header">
+      <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="images/sedona_logo.svg" width="140" height="70" alt="Логотип Седона">
       </a>
-      <nav class="navivigation">
-        <ul class="navivigation-list">
-          <li class="navivigation-item">
-           <a class="navivigation-link" href="index.html">Главная</a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+           <a class="navigation-link" href="index.html">Главная</a>
           </li>
-          <li class="navivigation-item">
-           <a class="navivigation-link" href="#">О Седоне</a>
+          <li class="navigation-item">
+           <a class="navigation-link" href="#">О Седоне</a>
           </li>
-          <li class="navivigation-item">
-            <a class="navivigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navivigation-user">
-          <li class="navivigation-user-list">
-            <a class="navivigation-user-link navivigation-user-link-search" href="#">
+        <ul class="navigation-user">
+          <li class="navigation-user-list">
+            <a class="navigation-user-link navivigation-user-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="navivigation-user-list">
-            <a class="navivigation-user-link navivigation-user-link-favorite" href="#">
+          <li class="navigation-user-list">
+            <a class="navigation-user-link navivigation-user-link-favorite" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="notification-badge">добавленно 12</span>
             </a>
@@ -36,10 +38,11 @@
         </ul>
         <a class="header-button" href="#">Хочу сюда!</a>
       </nav>
-  </header>
-    <main class="main-inner">
-      <h1 class="main-inner-title">Гостиницы Седоны</h1>
-      <ol class="breadcrumbs">
+      </header>
+      <main class="main-inner">
+      <div class="background-mountains-wraper">
+        <h1 class="main-inner-title">Гостиницы Седоны</h1>
+        <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link breadcrumbs-home-link" href="index.html">
             <span class="visually-hidden">Главная</span>
@@ -48,8 +51,8 @@
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
         </li>
-      </ol>
-      <section class="filters">
+        </ol>
+        <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="catalog-filter" action="https://htmlacademy.ru/" method="get">
          <fieldset class="catalog-filter-group">
@@ -67,7 +70,7 @@
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="wi-fi" checked>Wi-Fi
+                    <input class="control-input" type="checkbox" name="wi-fi">Wi-Fi
                   </label>
                 </li>
               </ul>
@@ -95,12 +98,13 @@
           <button class="catalog-filter-submit" type="submit">Применить</button>
           <button class="catalog-filter-reset" type="reset">Сбросить</button>
         </form>
-      </section>
+        </section>
+      </div>
       <section class="catalog-products">
         <h2 class="catalog-products-title">Найденно гостиниц: <span>38</span></h2>
         <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
           <option value="cheap">Сначала дешевые</option>
+          <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
         <ul class="view-buttons">
@@ -141,7 +145,7 @@
             <p class="product-card-type">Гостиница</p>
             <p class="product-card-price">От 5000 ₽</p>
             <a class="product-card-button" href="#">Подпобнее</a>
-            <button class="add-favorite-button" href="#">В избранное</button>
+            <button class="add-favorite-button anothe-color-batton" href="#">В избранное</button>
             <p class="product-card-stars product-card-stars-4"><span class="visually-hidden">4 звезды</span></p>
             <p class="product-card-rating">Рейтинг: <span>9,2</span></p>
           </li>
@@ -200,8 +204,8 @@
         <button class="subscribe-button" type="button">Подписаться</button>
       </form>
     </section>
-    </main>
-    <footer class="page-footer">
+      </main>
+      <footer class="page-footer">
       <ul class="page-social-list">
         <li class="page-social-item">
           <a class="page-social-link" href="https://vk.com/htmlacademy">
@@ -221,8 +225,9 @@
       </ul>
       <a class="contact-phone" href="tel:+78128121212">+7 (812) 812 12 12</a>
       <a class="copyright" href="https://htmlacademy.ru/">
-        <img class="htmlacademy-logo" src="" alt="Логотип HTML Academy">
+        <img class="htmlacademy-logo" src="../2483533-sedona-39-master/images/htmlacademy_logo.svg" width="114.9px" height="32.9px" alt="Логотип HTML Academy">
       </a>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
